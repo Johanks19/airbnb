@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Propiedades Disponibles - Clon de AirBnb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Clon de AirBnb</div>
+    <nav>
+        <a href="#">Propiedades</a>
+        <a href="#">Mis Reservas</a>
+        <a href="#">Mi Perfil</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Propiedades Disponibles</h1>
+    <div id="propiedades-container" class="propiedades-grid">
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Clon de AirBnb</p>
+</footer>
+
+<script src="script.js"></script>
+<div id="reserva-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Reservar Propiedad</h2>
+        <form id="reserva-form">
+            <input type="hidden" id="propiedadId-reserva" name="idPropiedad">
+            <label for="fechaInicio">Fecha de Inicio:</label>
+            <input type="date" id="fechaInicio" required><br><br>
+            <label for="fechaFin">Fecha de Fin:</label>
+            <input type="date" id="fechaFin" required><br><br>
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
